@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from './styles.module.scss';
 
 type SideMenuItem = {
@@ -20,7 +21,7 @@ const SideMenu = ({ title }: Props) => {
             <p className={styles.title}>{title}</p>
             <ul>
                 {sideMenuItems.map(({ title, url }, index) => (
-                    <li key={index} className="mb-2"><a href={url}>{title}</a></li>
+                    <li key={index} className="mb-2"><Link href={url}>{title}</Link></li>
                 ))}
             </ul>
         </div>

@@ -1,5 +1,8 @@
-import {redirect} from "next/navigation";
+"use client";
+
+import { useRouter } from "next/navigation";
 
 export default function Index() {
-    redirect(`/study`);
+    const router = useRouter();
+    router.push("/study");
 }
