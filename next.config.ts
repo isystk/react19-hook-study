@@ -1,6 +1,7 @@
 import type {NextConfig} from "next";
 
 const isProd = process.env.NODE_ENV === "production";
+const basePath = process.env.BASE_PATH ?? '';
 
 const nextConfig: NextConfig = {
     /* config options here */
@@ -9,10 +10,9 @@ const nextConfig: NextConfig = {
         APP_DESCRIPTION: 'Reactの学習用サンプルアプリケーションです。NextJS15を利用してReact19の主要なHooksの利用方法を学習します。',
     },
     // GitHub Pages の場合、コンテキストパス（basePath）を設定
-    basePath: isProd ? "/react19-hook-study" : "",
-    assetPrefix: isProd ? "/react19-hook-study/" : "",
-    // Static Export を有効化
-    output: "export",
+    basePath: basePath,
+    assetPrefix: basePath + '/',
+    output: "export", // Static Export を有効化
     trailingSlash: true, // ファイルパスの末尾に `/` を付ける
 };
 
