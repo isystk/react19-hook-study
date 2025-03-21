@@ -1,0 +1,1 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[974],{2459:(e,s,u)=>{Promise.resolve().then(u.bind(u,2868))},2868:(e,s,u)=>{"use strict";u.r(s),u.d(s,{default:()=>t});var r=u(8999);function t(){(0,r.useRouter)().push("/study")}}},e=>{var s=s=>e(e.s=s);e.O(0,[441,684,358],()=>s(2459)),_N_E=e.O()}]);
