@@ -1,0 +1,7 @@
+@use "@/styles/variable";
+
+.header {
+  background-color: variable.$primary-blue;
+  color: variable.$white;
+  padding: 8px 12px 12px;
+}
