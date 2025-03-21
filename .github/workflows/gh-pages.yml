@@ -1,5 +1,8 @@
 name: GitHub Pages
 
+env:
+  NODE_ENV: production
+
 on:
   push:
     branches:
