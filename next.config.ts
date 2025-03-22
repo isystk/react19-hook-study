@@ -10,7 +10,7 @@ const nextConfig: NextConfig = {
         APP_DESCRIPTION: 'Reactの学習用サンプルアプリケーションです。NextJS15を利用してReact19の主要なHooksの利用方法を学習します。',
     },
     // GitHub Pages の場合、コンテキストパス（basePath）を設定
-    basePath: basePath,
+    // basePath: basePath,
     assetPrefix: basePath,
     publicRuntimeConfig: {
         basePath: basePath,
