@@ -11,7 +11,10 @@ const nextConfig: NextConfig = {
     },
     // GitHub Pages の場合、コンテキストパス（basePath）を設定
     basePath: basePath,
-    assetPrefix: basePath + '/',
+    assetPrefix: basePath,
+    publicRuntimeConfig: {
+        basePath: basePath,
+    },
     output: "export", // Static Export を有効化
     trailingSlash: true, // ファイルパスの末尾に `/` を付ける
 };
