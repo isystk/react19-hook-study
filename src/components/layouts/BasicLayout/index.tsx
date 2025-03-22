@@ -17,6 +17,7 @@ export default function BasicLayout({children, title}: Readonly<Props>) {
         <>
             <Header/>
                 <main className="content">
+                    <h2>{title}</h2>
                     {children}
                 </main>
             <Footer/>

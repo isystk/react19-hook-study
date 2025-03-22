@@ -3,10 +3,9 @@ import SideMenu from "@/components/organisms/SideMenu";
 
 export default function Top() {
     return (
-        <BasicLayout title="トップ">
-            <h2>React Hooks 全20種の解説とサンプル</h2>
+        <BasicLayout title="React Hooks 全20種の解説とサンプル">
             <div className="grid grid-cols-5 pt-10">
-              <SideMenu title="目次" />
+              <SideMenu id="first" />
               <div className="col-span-4 px-5">
                   <h3>はじめに</h3>
                   <hr/>

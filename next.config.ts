@@ -1,8 +1,7 @@
 import type {NextConfig} from "next";
 
 const isProd = process.env.NODE_ENV === "production";
-const basePath = '/react19-hook-study';
-console.log(process.env);
+const basePath = process.env.BASE_PATH;
 
 const nextConfig: NextConfig = {
     /* config options here */
