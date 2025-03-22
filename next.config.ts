@@ -2,6 +2,7 @@ import type {NextConfig} from "next";
 
 const isProd = process.env.NODE_ENV === "production";
 const basePath = process.env.BASE_PATH ?? '';
+console.log(process.env);
 
 const nextConfig: NextConfig = {
     /* config options here */
