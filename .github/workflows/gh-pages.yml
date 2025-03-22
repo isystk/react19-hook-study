@@ -9,11 +9,6 @@ on:
 permissions:
   contents: write
 
-# 環境変数の設定
-env:
-  NODE_ENV: production
-  BASE_PATH: "/react19-hook-study"
-
 jobs:
   deploy:
     runs-on: ubuntu-22.04
