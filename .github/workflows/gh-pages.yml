@@ -24,7 +24,7 @@ jobs:
       - name: Use variables
         run: |
           echo "NODE_ENV variable : ${{ vars.NODE_ENV }}"
-          echo "BASE_PATH variable : ${{ vars.BASE_PATH }}"
+          echo "SUB_DIRECTORY variable : ${{ vars.SUB_DIRECTORY }}"
   
       # GitHub Pagesに公開するファイルの作成
       # 実際はGitリポジトリをチェックアウトしてそこからビルドすることが多い
