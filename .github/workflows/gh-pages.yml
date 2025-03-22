@@ -20,6 +20,11 @@ jobs:
         with:
           submodules: true  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+          
+      - name: Use variables
+        run: |
+          echo "NODE_ENV variable : ${{ vars.NODE_ENV }}"
+          echo "BASE_PATH variable : ${{ vars.BASE_PATH }}"
   
       # GitHub Pagesに公開するファイルの作成
       # 実際はGitリポジトリをチェックアウトしてそこからビルドすることが多い
