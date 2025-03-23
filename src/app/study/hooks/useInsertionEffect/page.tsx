@@ -10,9 +10,10 @@ export default function useInsertionEffect() {
             <p>利用シーン： スタイリングライブラリのパフォーマンス改善</p>
             <SectionTitle title="基本的な使い方" className="mt-10" />
             <p>
-                useInsertionEffect を使うと、CSSの挿入タイミングを最適化できる。
+                useInsertionEffect を使うと、useLayoutEffectやuseEffectより先にCSSの挿入タイミングを最適化できる。<br/>
+                DOMの変更前に実行され、レイアウトの計算前にスタイルを挿入できます。
             </p>
-            <CodeSandbox id="xxx" className="mt-10"  ></CodeSandbox>
+            <CodeSandbox id="rfkghx" className="mt-10" ></CodeSandbox>
         </BasicLayout>
     );
 }

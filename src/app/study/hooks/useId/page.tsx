@@ -12,7 +12,7 @@ export default function useId() {
             <p>
                 useId を使うと、コンポーネント間で一意なIDを安全に生成できる。
             </p>
-            <CodeSandbox id="xxx" className="mt-10"  ></CodeSandbox>
+            <CodeSandbox id="fdpd4w" className="mt-10"  ></CodeSandbox>
         </BasicLayout>
     );
 }

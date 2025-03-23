@@ -12,7 +12,7 @@ export default function useDebugValue() {
             <p>
                 useDebugValue を使うと、デバッグしやすい情報を出力できる。
             </p>
-            <CodeSandbox id="xxx" className="mt-10"  ></CodeSandbox>
+            <CodeSandbox id="9qsrpc" className="mt-10" ></CodeSandbox>
         </BasicLayout>
     );
 }

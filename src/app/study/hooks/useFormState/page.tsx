@@ -12,7 +12,7 @@ export default function useFormState() {
             <p>
                 useFormState を使うと、フォームの状態を効率的に管理できる。
             </p>
-            <CodeSandbox id="xxx" className="mt-10"  ></CodeSandbox>
+            <CodeSandbox id="39p9sk" className="mt-10"  ></CodeSandbox>
         </BasicLayout>
     );
 }
