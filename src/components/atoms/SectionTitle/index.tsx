@@ -8,7 +8,7 @@ type Props = {
 const SectionTitle = ({ title, className }: Props) => {
     return (
         <>
-            <h3 className={`$styles.sectionTitle} ${className}`}>{title}</h3>
+            <h3 className={`${styles.sectionTitle} ${className}`}>{title}</h3>
             <hr className={styles.hr}/>
         </>
     );
