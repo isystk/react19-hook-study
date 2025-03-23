@@ -12,7 +12,7 @@ export default function useLayoutEffect() {
             <p>
                 useEffect よりも早く実行され、DOM変更の影響を最小限にできる。
             </p>
-            <CodeSandbox id="xxx" className="mt-10"  ></CodeSandbox>
+            <CodeSandbox id="zf9tlz" className="mt-10"  ></CodeSandbox>
         </BasicLayout>
     );
 }

@@ -7,8 +7,10 @@ body {
   // font-family: variable.$font-family; // フォントはGoogleフォントを扱うのでコメントアウト
 }
 
-p {
-  margin-bottom: 10px;
+main.content {
+  p {
+    margin-bottom: 10px;
+  }
 }
 
 a {

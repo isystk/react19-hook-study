@@ -10,9 +10,10 @@ export default function useContext() {
             <p>利用シーン：テーマの切り替え、認証情報の管理</p>
             <SectionTitle title="基本的な使い方" className="mt-10" />
             <p>
-                useContext を使うことで、コンポーネント間でデータを簡単に共有できる。
+                useContext を使うことで、コンポーネント間でデータを簡単に共有できる。<br/>
+                Props バケツリレーを避けてグローバルな状態管理を実現する
             </p>
-            <CodeSandbox id="xxx" className="mt-10"  ></CodeSandbox>
+            <CodeSandbox id="l97jm8" className="mt-10"  ></CodeSandbox>
         </BasicLayout>
     );
 }

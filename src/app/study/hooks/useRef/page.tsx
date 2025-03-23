@@ -12,7 +12,7 @@ export default function useRef() {
             <p>
                 useRef を使うと、再レンダリングなしで値を維持できるため、パフォーマンスが向上する。
             </p>
-            <CodeSandbox id="xxx" className="mt-10"  ></CodeSandbox>
+            <CodeSandbox id="xsmyry" className="mt-10" ></CodeSandbox>
         </BasicLayout>
     );
 }

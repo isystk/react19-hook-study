@@ -2,9 +2,13 @@
 
 .logo {
   color: variable.$white;
-  img, h1 {
+  img, p {
     display: inline-block;
     vertical-align: middle;
+  }
+  p {
+    font-weight: bold;
+    font-size: 24px;
   }
   img {
     margin-right: 10px;

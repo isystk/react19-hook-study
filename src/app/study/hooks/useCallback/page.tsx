@@ -12,7 +12,7 @@ export default function useCallback() {
             <p>
                 useCallback を使うことで、関数が不要に再生成されるのを防ぎ、パフォーマンスを向上させる。
             </p>
-            <CodeSandbox id="xxx" className="mt-10"  ></CodeSandbox>
+            <CodeSandbox id="2dp7wh" isShowConsole={true} className="mt-10" ></CodeSandbox>
         </BasicLayout>
     );
 }
