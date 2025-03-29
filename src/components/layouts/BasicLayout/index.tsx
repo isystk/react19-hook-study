@@ -3,8 +3,6 @@ import Footer from "@/components/organisms/Footer";
 import {metadata} from "@/app/layout";
 import SideMenu from "@/components/organisms/SideMenu";
 import Icon from "@/components/atoms/Icon";
-import getConfig from 'next/config';
-const { publicRuntimeConfig } = getConfig();
 
 type Props = {
     children: React.ReactNode;
@@ -17,7 +15,7 @@ type Props = {
 export default function BasicLayout({children, title, sideMenuId, isNew = false}: Readonly<Props>) {
 
     // タイトルタグを書き換える
-    metadata.title = `${title} | ${publicRuntimeConfig.APP_NAME}`;
+    metadata.title = `${title} | ${process.env.APP_NAME}`;
     
     return (
         <>
