@@ -1,5 +1,7 @@
 import "@/styles/globals.scss";
 import {Metadata} from "next";
+import getConfig from 'next/config';
+const { publicRuntimeConfig } = getConfig();
 import { Geist, Geist_Mono } from "next/font/google";
 
 const geistSans = Geist({
@@ -17,8 +19,8 @@ type Props = {
 };
 
 export const metadata: Metadata = {
-    title: process.env.APP_NAME,
-    description: process.env.APP_DESCRIPTION,
+    title: publicRuntimeConfig.APP_NAME,
+    description: publicRuntimeConfig.APP_DESCRIPTION,
 };
 
 export default function RootLayout({children}: Readonly<Props>) {

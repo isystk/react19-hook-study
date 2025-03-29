@@ -1,4 +1,6 @@
 import NextImage from 'next/image'
+import getConfig from 'next/config';
+const { publicRuntimeConfig } = getConfig();
 
 type Props = {
     src: string,
@@ -9,7 +11,7 @@ type Props = {
 };
 
 const Image = ({ src, alt, width, height, loading = 'lazy' }: Props) => {
-    const subDirectory = process.env.SUB_DIRECTORY || "";
+    const subDirectory = publicRuntimeConfig.SUB_DIRECTORY || "";
     return (
         <>
             <NextImage
