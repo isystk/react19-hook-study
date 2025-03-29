@@ -28,7 +28,7 @@ export default function BasicLayout({children, title, sideMenuId, isNew = false}
                         <div className="col-span-4 px-5">
                             <div className="flex items-center mb-5">
                                 <h1 className="font-bold text-2xl">{title}</h1>
-                                {isNew && <Icon text="新機能(React19)" className="" />}
+                                {isNew && <Icon text="新機能" className="" />}
                             </div>
                             {children}
                         </div>

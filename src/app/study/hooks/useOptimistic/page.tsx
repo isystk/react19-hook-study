@@ -4,7 +4,7 @@ import SectionTitle from "@/components/atoms/SectionTitle";
 
 export default function useOptimistic() {
     return (
-        <BasicLayout title="17. UseOptimistic" sideMenuId="useOptimistic">
+        <BasicLayout title="17. UseOptimistic" sideMenuId="useOptimistic" isNew={true}>
             <SectionTitle title="概要" />
             <p>楽観的UI更新を管理するフック</p>
             <p>利用シーン：即時反映するUI</p>
