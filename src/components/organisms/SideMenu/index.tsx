@@ -1,10 +1,12 @@
 import Link from "next/link";
 import styles from './styles.module.scss';
+import Icon from "@/components/atoms/Icon";
 
 type SideMenuItem = {
     id: string;
     title: string;
     url: string;
+    isNew?: boolean;
 }
 
 type Props = {
@@ -28,11 +30,11 @@ const sideMenuItems = [
     {id: 'useDebugValue', title: '13. useDebugValue', url: '/study/hooks/useDebugValue'},
     {id: 'useImperativeHandle', title: '14. useImperativeHandle', url: '/study/hooks/useImperativeHandle'},
     {id: 'useInsertionEffect', title: '15. useInsertionEffect', url: '/study/hooks/useInsertionEffect'},
-    {id: 'useActionState', title: '16. useActionState', url: '/study/hooks/useActionState'},
-    {id: 'useOptimistic', title: '17. useOptimistic', url: '/study/hooks/useOptimistic'},
-    {id: 'useFormState', title: '18. useFormState', url: '/study/hooks/useFormState'},
-    {id: 'useFormStatus', title: '19. useFormStatus', url: '/study/hooks/useFormStatus'},
-    {id: 'use', title: '20. use', url: '/study/hooks/use'},
+    {id: 'useActionState', title: '16. useActionState', url: '/study/hooks/useActionState', isNew: true},
+    {id: 'useOptimistic', title: '17. useOptimistic', url: '/study/hooks/useOptimistic', isNew: true},
+    {id: 'useFormState', title: '18. useFormState', url: '/study/hooks/useFormState', isNew: true},
+    {id: 'useFormStatus', title: '19. useFormStatus', url: '/study/hooks/useFormStatus', isNew: true},
+    {id: 'use', title: '20. use', url: '/study/hooks/use', isNew: true},
 ] as SideMenuItem[];
 
 const SideMenu = ({ id }: Props) => {
@@ -40,13 +42,14 @@ const SideMenu = ({ id }: Props) => {
         <div className={styles.sideMenu}>
             <p className={styles.title}>目次</p>
             <ul>
-               {sideMenuItems.map(({ id: itemId, title, url }) => (
+               {sideMenuItems.map(({ id: itemId, title, url, isNew = false }) => (
                     <li key={itemId} className="mb-2">
                         {id === itemId ? (
                             <span >{title}</span>
                         ) : (
                             <Link href={url}>{title}</Link>
                         )}
+                        {isNew && <Icon text="New" className="" />}
                     </li>
                 ))}
             </ul>

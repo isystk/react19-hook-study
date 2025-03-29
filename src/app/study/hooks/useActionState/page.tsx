@@ -4,7 +4,7 @@ import SectionTitle from "@/components/atoms/SectionTitle";
 
 export default function useActionState() {
     return (
-        <BasicLayout title="16. UseActionState" sideMenuId="useActionState">
+        <BasicLayout title="16. UseActionState" sideMenuId="useActionState" isNew={true}>
             <SectionTitle title="概要" />
             <p>非同期処理をしたあとの結果でステート更新ができるフック</p>
             <p>利用シーン：フォーム送信、非同期処理</p>
