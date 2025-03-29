@@ -1,14 +1,14 @@
 import type {NextConfig} from "next";
 
 const isProd = process.env.NODE_ENV === "production";
-const subDirectory = process.env.NEXT_PUBLIC_SUB_DIRECTORY || ''; // GitHub Pages の場合、コンテキストパスを設定
+const subDirectory = process.env.SUB_DIRECTORY || ''; // GitHub Pages の場合、コンテキストパスを設定
 
 const nextConfig: NextConfig = {
     /* config options here */
 
     env: {
         // Client Side
-        NEXT_PUBLIC_SUB_DIRECTORY: subDirectory,
+        NEXT_PUBLIC_XXXX: "",
         // Server Side
         API_SERVER: process.env.API_SERVER || 'http://localhost:3000',
     },

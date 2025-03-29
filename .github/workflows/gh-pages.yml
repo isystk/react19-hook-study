@@ -76,7 +76,7 @@ jobs:
       - name: Build with Next.js
         env:
           NODE_ENV: ${{ vars.NODE_ENV }}  # GitHub Environmentsから取得
-          NEXT_PUBLIC_SUB_DIRECTORY: ${{ vars.NEXT_PUBLIC_SUB_DIRECTORY }}  # GitHub Environmentsから取得
+          SUB_DIRECTORY: ${{ vars.SUB_DIRECTORY }}  # GitHub Environmentsから取得
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
