@@ -11,6 +11,7 @@ type SideMenuItem = {
 
 type Props = {
     id?: string;
+    className?: string;
 }
 
 const sideMenuItems = [
@@ -32,13 +33,13 @@ const sideMenuItems = [
     {id: 'useInsertionEffect', title: '15. useInsertionEffect', url: '/study/hooks/useInsertionEffect'},
     {id: 'useActionState', title: '16. useActionState', url: '/study/hooks/useActionState', isNew: true},
     {id: 'useOptimistic', title: '17. useOptimistic', url: '/study/hooks/useOptimistic', isNew: true},
-    {id: 'useFormStatus', title: '19. useFormStatus', url: '/study/hooks/useFormStatus', isNew: true},
-    {id: 'use', title: '20. use', url: '/study/hooks/use', isNew: true},
+    {id: 'useFormStatus', title: '18. useFormStatus', url: '/study/hooks/useFormStatus', isNew: true},
+    {id: 'use', title: '19. use', url: '/study/hooks/use', isNew: true},
 ] as SideMenuItem[];
 
-const SideMenu = ({ id }: Props) => {
+const SideMenu = ({ id, className }: Props) => {
     return (
-        <div className={styles.sideMenu}>
+        <div className={`${className} ${styles.sideMenu}`}>
             <p className={styles.title}>目次</p>
             <ul>
                {sideMenuItems.map(({ id: itemId, title, url, isNew = false }) => (
