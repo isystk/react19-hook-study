@@ -4,6 +4,7 @@ import {metadata} from "@/app/layout";
 import SideMenu from "@/components/organisms/SideMenu";
 import Icon from "@/components/atoms/Icon";
 import {APP_NAME} from "@/constants/app";
+import Circles from "@/components/atoms/Circles";
 
 type Props = {
     children: React.ReactNode;
@@ -21,19 +22,21 @@ export default function BasicLayout({children, title, sideMenuId, isNew = false}
     return (
         <>
             <Header/>
-                <main className="content">
-                    <p className="font-bold text-3xl">React Hooks 全19種の解説とサンプル</p>
-                    <div className="grid md:grid-cols-5 pt-10">
-                        <div className="md:col-span-4 md:px-5">
-                            <div className="flex items-center mb-5">
-                                <h1 className="font-bold text-2xl">{title}</h1>
-                                {isNew && <Icon text="新機能" className="" />}
+                <Circles>
+                    <main className="content">
+                        <p className="font-bold text-3xl">React Hooks 全19種の解説とサンプル</p>
+                        <div className="grid md:grid-cols-5 pt-10">
+                            <div className="md:col-span-4 md:px-5">
+                                <div className="flex items-center mb-5">
+                                    <h1 className="font-bold text-2xl">{title}</h1>
+                                    {isNew && <Icon text="新機能" className="" />}
+                                </div>
+                                {children}
                             </div>
-                            {children}
+                            <SideMenu id={sideMenuId} className="md:col-span-1 md:order-first mt-5 md:mt-0" />
                         </div>
-                        <SideMenu id={sideMenuId} className="md:col-span-1 md:order-first mt-5 md:mt-0" />
-                    </div>
-                </main>
+                    </main>
+                </Circles>
             <Footer/>
         </>
     );

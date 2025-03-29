@@ -8,26 +8,23 @@ body {
 }
 
 main.content {
+  background: variable.$white;
+  max-width : 1200px;
+  min-height: calc(100vh - 104px); // 画面の高さからヘッダー・フッターを引く
+  margin: auto;
+  padding: 12px;
   p {
     margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  main.content {
+    padding: 32px;
   }
 }
 
 a {
   text-decoration: underline;
   color: variable.$primary-blue;
-}
-
-.content {
-  background: variable.$white;
-  max-width : 1200px;
-  min-height: calc(100vh - 104px); // 画面の高さからヘッダー・フッターを引く
-  margin: auto;
-  padding: 12px
-}
-
-@media screen and (min-width: 767px) {
-  .content {
-    padding: 32px;
-  }
 }
