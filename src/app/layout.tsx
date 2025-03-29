@@ -17,8 +17,8 @@ type Props = {
 };
 
 export const metadata: Metadata = {
-    title: process.env.APP_NAME,
-    description: process.env.APP_DESCRIPTION,
+    title: process.env.NEXT_PUBLIC_APP_NAME,
+    description: process.env.NEXT_PUBLIC_APP_DESCRIPTION,
 };
 
 export default function RootLayout({children}: Readonly<Props>) {

@@ -7,7 +7,7 @@ const Logo = () => {
     return (
         <div className={styles.logo}>
             <Image src="/images/github-mark-white.svg" width={30} height={30} alt="Logo" />
-            <p>{process.env.APP_NAME}</p>
+            <p>{process.env.NEXT_PUBLIC_APP_NAME}</p>
         </div>
     );
 };

@@ -15,7 +15,7 @@ type Props = {
 export default function BasicLayout({children, title, sideMenuId, isNew = false}: Readonly<Props>) {
 
     // タイトルタグを書き換える
-    metadata.title = `${title} | ${process.env.APP_NAME}`;
+    metadata.title = `${title} | ${process.env.NEXT_PUBLIC_APP_NAME}`;
     
     return (
         <>

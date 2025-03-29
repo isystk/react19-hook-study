@@ -9,7 +9,7 @@ type Props = {
 };
 
 const Image = ({ src, alt, width, height, loading = 'lazy' }: Props) => {
-    const subDirectory = process.env.SUB_DIRECTORY || "";
+    const subDirectory = process.env.NEXT_PUBLIC_SUB_DIRECTORY || "";
     return (
         <>
             <NextImage
