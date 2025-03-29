@@ -7,13 +7,15 @@ export default function useSyncExternalStore() {
         <BasicLayout title="12. UseSyncExternalStore" sideMenuId="useSyncExternalStore">
             <SectionTitle title="概要" />
             <p>外部ストアと同期するためのフック</p>
-            <p>利用シーン： グローバルストアのデータ管理、ブラウザAPIから画面サイズを取得</p>
+            <p>利用シーン： ブラウザAPIから画面サイズを取得、グローバルストアのデータ管理</p>
             <SectionTitle title="基本的な使い方" className="mt-10" />
             <p>
                 useSyncExternalStore を使うと、外部の状態管理ライブラリ（Redux など）と同期を取れる。<br/>
                 Reduxなどを利用しないとなかなか使う機会は少ないが、 ブラウザAPIを使って画面サイズを取得することなどには利用されることがある。
             </p>
             <CodeSandbox id="p5yn6f" className="mt-10"  ></CodeSandbox>
+            <p className="mt-10" >状態管理を同期する例</p>
+            <CodeSandbox id="usesyncexternalstore2-jgsfps" ></CodeSandbox>
         </BasicLayout>
     );
 }

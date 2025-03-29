@@ -17,6 +17,9 @@ const nextConfig: NextConfig = {
         basePath: subDirectory,
     },
     output: "export", // Static Export を有効化
+    images: {
+        unoptimized: true, // 静的エクスポートを利用するため next/image の最適化機能を無効にする
+    },
     trailingSlash: true, // ファイルパスの末尾に `/` を付ける
 };
 

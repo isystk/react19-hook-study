@@ -14,7 +14,9 @@ export default function useEffect() {
             <SectionTitle title="基本的な使い方" className="mt-10" />
             <p>
                 useEffect を使うことで、コンポーネントのマウント・アンマウント・更新時に処理を実行できる。<br/>
-                現在では代替手段として、useSyncExternalStore を利用することで外部ストアのデータをリアルタイムで同期できる。<br/>
+                API を呼び出す用途においては、Next.js を使用してる場合は、React Server Components（RSC）を利用するのが最適です。<br/>
+                Next.js を使っていない場合や、クライアントでデータ取得・キャッシュを管理したい場合は、useEffect の代わりに SWR や React Query を使うのがベストです。<br/>
+                外部ストアの状態を管理する用途においては、useState + useSyncExternalStore を利用することでより適切に状態を管理できます。<br/>
             </p>
             <CodeSandbox id="useeffect-79t3sx" className="mt-10"  ></CodeSandbox>
         </BasicLayout>
